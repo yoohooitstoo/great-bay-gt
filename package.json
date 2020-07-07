@@ -1,0 +1,25 @@
+{
+  "name": "great-bay-gt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoohooitstoo/great-bay-gt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoohooitstoo/great-bay-gt/issues"
+  },
+  "homepage": "https://github.com/yoohooitstoo/great-bay-gt#readme",
+  "dependencies": {
+    "inquirer": "^7.3.0",
+    "mysql": "^2.18.1"
+  }
+}
