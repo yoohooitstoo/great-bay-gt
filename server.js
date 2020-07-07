@@ -5,7 +5,7 @@ const fs = require("fs");
 const questions = [
     {
         type: "list",
-        name: "name",
+        name: "initialQuestion",
         message: "Please selection an option.",
         choices: [
             "POST AN ITEM",
@@ -13,8 +13,35 @@ const questions = [
             "EXIT"
         ]
       },
+      {
+        type: "input",
+        message: "What is it the item you would like to Post?",
+        name: "postItem",
+        when: (response) => response.initialQuestion === "POST AN ITEM",
+    },
+    {
+        type: "input",
+        message: "What is it the item you would like to Bid?",
+        name: "bidItem",
+        when: (response) => response.initialQuestion === "BID ON AN ITEM",
+    },
 ];
 
-inquirer.prompt(questions).then((answers) => {
-    console.log(answers);
-});
+// const postItem = [
+    
+// ]
+
+function init (){
+    inquirer.prompt(questions).then((answers) => {
+        console.log(answers);
+        
+    });
+};
+
+
+
+
+
+
+
+init ();
